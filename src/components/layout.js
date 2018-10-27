@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import { injectIntl } from 'react-intl'
 import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
@@ -48,4 +49,4 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout
+export default injectIntl(Layout)

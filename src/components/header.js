@@ -1,5 +1,7 @@
 import React from 'react'
-import { Link } from 'gatsby'
+
+import { Link } from '../i18n'
+import Language from './language'
 
 const Header = ({ siteTitle }) => (
   <div
@@ -26,6 +28,9 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+      <div style={{ float: 'right' }}>
+        <Language />
+      </div>
     </div>
   </div>
 )
